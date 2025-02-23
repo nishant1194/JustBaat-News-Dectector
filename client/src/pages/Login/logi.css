@@ -1,0 +1,83 @@
+.mainC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   }
+  
+  .maindiv {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 320px;
+  }
+  
+  .Login {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px;
+  }
+  
+  .started {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .inputF {
+    margin: 10px 0;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .forgotP {
+    display: block;
+    margin: 10px 0;
+    color: #2575fc;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .btn {
+    margin: 20px 0px;
+    width: 100%;
+    padding: 12px;
+    background: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background: #2575fc;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .new {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .regi {
+    color: #6a11cb;
+    text-decoration: none;
+  }
+  

@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .navbar {
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background: #ffffff;
+    color: black;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 80px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 50px;
+  }
+  .rightsection {
+    
+    width: 100px;
+  }
+  .nav-links a {
+    padding: 10px 20px;
+    border-radius: 40px;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+    font-weight: 500;
+  }
+  
+  .nav-links a:hover {
+    color: #fbfbff;
+    transition: color 0.3s;
+  
+    background-color: #000000;
+  }
+  
+  /* Hamburger Button (Hidden on Large Screens) */
+  .hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background: #007bff;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+  
+  .btn-22,
+  .btn-22 *,
+  .btn-22 :after,
+  .btn-22 :before,
+  .btn-22:after,
+  .btn-22:before {
+    border: 0 solid;
+    box-sizing: border-box;
+  }
+  .btn-22 {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: button;
+    background-color: #000;
+    background-image: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+      Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+      Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 100%;
+    font-weight: 900;
+    line-height: 1.5;
+    margin: 0;
+    -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+    padding: 0;
+    text-transform: uppercase;
+  }
+  .btn-22:disabled {
+    cursor: default;
+  }
+  .btn-22:-moz-focusring {
+    outline: auto;
+  }
+  .btn-22 svg {
+    display: block;
+    vertical-align: middle;
+  }
+  .btn-22 [hidden] {
+    display: none;
+  }
+  .btn-22 {
+    border-radius: 99rem;
+    border-width: 2px;
+    overflow: hidden;
+    padding: 0.8rem 3rem;
+    position: relative;
+  }
+  .btn-22 span {
+    mix-blend-mode: difference;
+  }
+  .btn-22:before {
+    aspect-ratio: 1;
+    background: #fff;
+    border-radius: 50%;
+    content: "";
+    left: -100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) scale(1);
+    transform-origin: left center;
+    transition: transform 0.2s ease;
+    width: 100%;
+  }
+  .btn-22:hover:before {
+    transform: translateY(-50%) scale(2);
+  }
+
+  .imgUser{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+
+/* Dropdown styles */
+.dropdown {
+    position: absolute;
+    right: 50px;
+    top: 70px;
+    background: white;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    z-index: 200;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  /* Dropdown header */
+  .dropdown-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .dropdown-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .dropdown-user {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  /* Logout button */
+  .dropdown-logout {
+    width: 100%;
+    background: rgb(57, 57, 191);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .dropdown-logout:hover {
+    background: rgb(40, 40, 150);
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
