@@ -4,6 +4,13 @@ An intelligent web application that classifies news headlines, assigns a **Consp
 
 **Demo Video link:-** https://drive.google.com/file/d/1OQ5aJDoktamlFSo6ZWpkA8IXw6DPyx4j/view?usp=sharing
 
+## Approach
+- **Preprocessing**- Stopword removal, lemmatization, punctuation & number cleaning using NLTK. Text converted to TF-IDF vectors.
+- **Fake News Detection**- Logistic Regression classifies news. Model saved as news_classifier.pkl.
+- **Conspiracy Score**- Logistic Regression assigns a 0-100% conspiracy score. Model saved as conspiracy_score_fake_news_model.pkl.
+- **Backend**- Node.js + Express.js handles API requests, loads models using Joblib, and stores data in MongoDB.
+- **Frontend**- React.js sends news for analysis, displays results with modern UI
+
 ## Installation steps
 - Clone this git repo.
 - Go to client directory and write following commands
