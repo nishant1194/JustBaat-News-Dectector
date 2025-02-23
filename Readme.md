@@ -2,6 +2,23 @@
 
 An intelligent web application that classifies news headlines, assigns a **Conspiracy Score (0-100%)**, and allows users to manage news articles dynamically.  
 
+**Demo Video link:-** https://drive.google.com/file/d/1OQ5aJDoktamlFSo6ZWpkA8IXw6DPyx4j/view?usp=sharing
+
+## Installation steps
+- Clone this git repo.
+- Go to client directory and write following commands
+- npm install
+- npm run dev
+- Now go to server directory and write following commands
+- npm install
+- npm run nodemon
+- Now run mlsever is a python flask server which fetches the predictions from model. Write following commands to run this server
+- python mlsever.py
+
+- The client will running on **http://localhost:5173/**
+- The server will running on **http://localhost:6005/**
+- The ml server will running on **http://localhost:5001/**
+  
 ---
 
 ## 📌 Features  
@@ -27,20 +44,6 @@ An intelligent web application that classifies news headlines, assigns a **Consp
 
 ---
 
-##Installation steps
-- Clone this git repo.
-- Go to client directory and write following commands
-- npm install
-- npm run dev
-- Now go to server directory and write following commands
-- npm install
-- npm run nodemon
-- Now run mlsever is a python flask server which fetches the predictions from model. Write following commands to run this server
-- python mlsever.py
-
-- The client will running on **http://localhost:5173/**
-- The server will running on **http://localhost:6005/**
-- The ml server will running on **http://localhost:5001/**
 
 
 ## 🛠️ Tech Stack  
